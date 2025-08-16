@@ -1,5 +1,3 @@
-
-```markdown
 # JPA Demo – Employee Management API
 
 This project is a **Spring Boot REST API** for managing employee details using **Spring Data JPA** and **MySQL Database**.  
@@ -26,24 +24,8 @@ It demonstrates **CRUD operations** with a layered architecture (Controller → 
 ---
 
 ## 📂 Project Structure
-```
+<img width="697" height="443" alt="image" src="https://github.com/user-attachments/assets/4cc3b807-feee-4b8c-b5f5-13057161191d" />
 
-JPA\_demo/
-│── src/main/java/com/example/JPA\_demo/
-│   ├── controllers/       # REST controllers
-│   │   └── EmpController.java
-│   ├── models/            # Entity classes
-│   │   └── Employee.java
-│   ├── repository/        # JPA Repository interfaces
-│   │   └── EmpRepo.java
-│   ├── services/          # Business logic
-│   │   └── EmpService.java
-│   └── JPA\_demoApplication.java  # Main Spring Boot Application
-│
-└── src/main/resources/
-├── application.properties   # Database configuration
-
-````
 
 ---
 
@@ -71,17 +53,8 @@ JPA\_demo/
   "department": "IT",
   "salary": 55000
 }
-````
 
-**Response**
+Response
 
-```
 Employee details added successfully
-```
 
-```
-
----
-
-
-```
