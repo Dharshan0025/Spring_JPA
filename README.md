@@ -1,5 +1,3 @@
-Got it 👍
-Here’s your **copy-pastable README.md** content, formatted properly for GitHub (Markdown):
 
 ```markdown
 # JPA Demo – Employee Management API
