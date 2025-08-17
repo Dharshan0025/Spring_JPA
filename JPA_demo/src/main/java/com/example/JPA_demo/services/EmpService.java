@@ -41,4 +41,8 @@ public class EmpService {
         empRepo.deleteAll();
         return "All data cleared successfully";
     }
+
+    public List<Employee> getEmployeeByDep(String dep) {
+        return empRepo.findByDepartment(dep);
+    }
 }

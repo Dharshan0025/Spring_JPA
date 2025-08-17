@@ -18,7 +18,7 @@ public class EmpController {
     public String addemp(@RequestBody Employee emp ){
         return service.addEmployee(emp);
     }
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public  Employee getemp(@PathVariable int id){
         return service.getEmployeeById(id);
     }
@@ -37,6 +37,11 @@ public class EmpController {
     @DeleteMapping
     public String clearAll(){
         return service.deleteEmployeeAll();
+    }
+
+    @GetMapping("/dep/{dep}")
+    public List<Employee> getByDep(@PathVariable String dep){
+        return service.getEmployeeByDep(dep);
     }
 
 }
