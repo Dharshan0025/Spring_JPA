@@ -45,4 +45,8 @@ public class EmpService {
     public List<Employee> getEmployeeByDep(String dep) {
         return empRepo.findByDepartment(dep);
     }
+
+    public List<Employee> getEmpByRange(int start, int end) {
+        return empRepo.findBySalaryRange(start,end);
+    }
 }

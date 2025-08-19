@@ -3,6 +3,7 @@ package com.example.JPA_demo.controllers;
 import com.example.JPA_demo.models.Employee;
 import com.example.JPA_demo.services.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -42,6 +43,11 @@ public class EmpController {
     @GetMapping("/dep/{dep}")
     public List<Employee> getByDep(@PathVariable String dep){
         return service.getEmployeeByDep(dep);
+    }
+
+    @GetMapping("get/salary")
+    public List<Employee> getEmpBySalBtwnRange(@RequestParam int start, @RequestParam int end){
+       return service.getEmpByRange(start,end);
     }
 
 }
