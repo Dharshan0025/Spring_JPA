@@ -13,4 +13,7 @@ public interface EmpRepo extends JpaRepository<Employee,Integer> {
      List<Employee> findByDepartment(String dep);
      @Query(nativeQuery = true,value="SELECT * FROM employee WHERE salary BETWEEN :start AND :end")
      List<Employee> findBySalaryRange(@Param("start") int start,@Param("end")int end);
+
+     @Query(nativeQuery = true,value="Select * from employee where name like :ch%")
+     List<Employee> findNameByChar(@Param("ch")char ch);
 }

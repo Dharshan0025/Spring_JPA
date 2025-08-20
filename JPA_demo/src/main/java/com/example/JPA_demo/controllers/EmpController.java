@@ -49,5 +49,9 @@ public class EmpController {
     public List<Employee> getEmpBySalBtwnRange(@RequestParam int start, @RequestParam int end){
        return service.getEmpByRange(start,end);
     }
+    @GetMapping("get/char")
+    public List<Employee> filterByChar(@RequestParam char ch){
+        return service.getByChar(ch);
+    }
 
 }
